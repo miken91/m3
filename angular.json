@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "m3-dashboard": "apps/m3-dashboard",
+    "m3-dashboard-e2e": "apps/m3-dashboard-e2e",
+    "pitch-recognition": "libs/pitch-recognition"
+  }
+}

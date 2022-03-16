@@ -1,0 +1,8 @@
+<div>
+<mat-form-field>
+    <mat-label>Type</mat-label>
+    <mat-select [(ngModel)]="type" (ngModelChange)="handleTypeChange($event)">
+        <mat-option *ngFor="let type of componentType | keyvalue" [value]="type.value">{{type.key}}</mat-option>
+    </mat-select>
+</mat-form-field>
+</div>

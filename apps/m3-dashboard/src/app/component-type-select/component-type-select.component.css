@@ -1,0 +1,7 @@
+::ng-deep .mat-select-panel .mat-option-text { 
+    font-size: medium; 
+}
+
+.mat-form-field {
+    font-size: medium;
+}

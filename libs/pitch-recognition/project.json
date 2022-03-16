@@ -1,0 +1,23 @@
+{
+  "root": "libs/pitch-recognition",
+  "sourceRoot": "libs/pitch-recognition/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/pitch-recognition/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/pitch-recognition"],
+      "options": {
+        "jestConfig": "libs/pitch-recognition/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

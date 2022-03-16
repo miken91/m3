@@ -1,0 +1,15 @@
+<div>
+    <toolbar></toolbar>
+        <div class="grid-container" >
+            <ng-container *ngFor="let component of components">
+                <mat-card class="pitch-recognition" *ngIf="component.type === componentType.PitchRecognition">
+                    <mat-card-title>Pitch Recognition</mat-card-title>
+                    <mat-card-content>
+                        <pitch-recognition ></pitch-recognition>
+                    </mat-card-content>
+                </mat-card>
+                <advanced-stats  class="advanced-stats" [playerStats]="playerStats" *ngIf="component.type === componentType.AdvancedStats" ></advanced-stats>
+                <baseball-card-stats class="baseball-card-stats" [playerStats]="playerStats" *ngIf="component.type === componentType.BaseballCard"></baseball-card-stats>
+            </ng-container>
+        </div>
+</div>

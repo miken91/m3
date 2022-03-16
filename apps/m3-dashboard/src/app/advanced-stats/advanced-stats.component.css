@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.stat-name {
+    margin: 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+.stat {
+    font-size: large;
+    text-align: end;
+    margin: 0;
+}

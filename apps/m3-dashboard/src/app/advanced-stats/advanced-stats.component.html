@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Expanded Stats</mat-card-title>
+    <mat-card-content>
+        <div class="grid-container">
+            <div class="stat-name">BABIP</div>
+            <div class="stat">{{playerStats?.babip}}</div>
+            <div class="stat-name">Hit By Pitch</div>
+            <div class="stat">{{playerStats?.hbp}}</div>
+            <div class="stat-name">Extra Base Hits</div>
+            <div class="stat">{{playerStats?.xbh}}</div>
+            <div class="stat-name">AB/HR</div>
+            <div class="stat">{{getAbPerHr()}}</div>
+            <div class="stat-name">BB/K</div>
+            <div class="stat">{{getBbPerK()}}</div>
+        </div>
+    </mat-card-content>
+</mat-card>
